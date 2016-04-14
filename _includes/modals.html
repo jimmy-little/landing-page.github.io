@@ -18,17 +18,23 @@
                             <p>{{ post.description }}</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
-                                    <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
+                                    <strong>{{ post.client }}</a>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
+                                    <strong>{{ post.project-date }}</a>
                                     </strong>
                                 </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
+                                <li>What I Did:
+                                    <strong>{{ post.category }}</a>
                                     </strong>
                                 </li>
+        {% if post.episodes %}
+                                 <li>Run:
+                                    <strong>{{ post.episodes }}</a>
+                                    </strong>
+                                </li>
+        {% endif %}
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
